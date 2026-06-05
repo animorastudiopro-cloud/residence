@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Résidence Kanga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Résidence Kanga - Chambres et Appartements à Bingerville</title>
+    <meta name="description"
+        content="Résidence Kanga à Bingerville - Chambres et appartements climatisés avec WiFi gratuit, parking sécurisé et sécurité 24/7. Réservez votre séjour dès maintenant.">
     <link rel="stylesheet" href="accueil.css">
     <script src="https://kit.fontawesome.com/40a930d246.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +20,7 @@
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <img src="./images/logo.png" alt="Logo">
+                <img src="./images/logo.png" alt="Logo Résidence Kanga">
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Accueil</a></li>
@@ -84,7 +86,7 @@
             <button class="about-btn" id="about-btn">En savoir plus</button>
         </div>
         <div class="about-image">
-            <img src="./images/about-img.png" alt="Image à propos">
+            <img src="./images/about-img.png" alt="Image à propos de Residence Kanga">
         </div>
     </div>
 
@@ -92,8 +94,9 @@
         <h4>Nos chambres/apparts</h4>
         <h2>Des chambres et appartement pour tous les gouts</h2>
         <div class="hebergements-list">
-            <div class="hebergement-item">
-                <img src="./images/appart_img/hebergement1.png" alt="Chambre 1">
+            <!-- Carte 1 - Chambre Standard -->
+            <div class="hebergement-item" data-chambre="Chambre Standard" data-prix="25000">
+                <img src="./images/appart_img/hebergement1.png" alt="Chambre Standard">
                 <div class="hebergement-info">
                     <h3>Chambre Standard</h3>
                     <p>à partir de <span>25000</span> FCFA/nuit</p>
@@ -102,48 +105,60 @@
                         <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
                         <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
                     </div>
+                    <button class="btn-reserver-chambre" onclick="reserverChambre(this)">📅 Réserver</button>
                 </div>
             </div>
-            <div class="hebergement-item">
-                <img src="./images/chambre1.png" alt="Chambre 1">
+
+            <!-- Carte 2 - Chambre Deluxe -->
+            <div class="hebergement-item" data-chambre="Chambre Deluxe" data-prix="35000">
+                <img src="./images/chambre1.png" alt="Chambre Deluxe">
                 <div class="hebergement-info">
-                    <h3>Chambre Standard</h3>
-                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <h3>Chambre Deluxe</h3>
+                    <p>à partir de <span>35000</span> FCFA/nuit</p>
                     <div class="hebergement-features">
-                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-bed"></i>1 lit king size</p>
                         <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
                         <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
                     </div>
+                    <button class="btn-reserver-chambre" onclick="reserverChambre(this)">📅 Réserver</button>
                 </div>
             </div>
-            <div class="hebergement-item">
-                <img src="./images/chambre1.png" alt="Chambre 1">
+
+            <!-- Carte 3 - Suite Junior -->
+            <div class="hebergement-item" data-chambre="Suite Junior" data-prix="45000">
+                <img src="./images/chambre1.png" alt="Suite Junior">
                 <div class="hebergement-info">
-                    <h3>Chambre Standard</h3>
-                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <h3>Suite Junior</h3>
+                    <p>à partir de <span>45000</span> FCFA/nuit</p>
                     <div class="hebergement-features">
-                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
-                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
-                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                        <p><i class="fa-solid fa-bed"></i>1 lit king size + canapé</p>
+                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi haut débit</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation réversible</p>
                     </div>
+                    <button class="btn-reserver-chambre" onclick="reserverChambre(this)">📅 Réserver</button>
                 </div>
             </div>
-            <div class="hebergement-item">
-                <img src="./images/chambre1.png" alt="Chambre 1">
+
+            <!-- Carte 4 - Appartement Familial -->
+            <div class="hebergement-item" data-chambre="Appartement Familial" data-prix="65000">
+                <img src="./images/chambre1.png" alt="Appartement Familial">
                 <div class="hebergement-info">
-                    <h3>Chambre Standard</h3>
-                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <h3>Appartement Familial</h3>
+                    <p>à partir de <span>65000</span> FCFA/nuit</p>
                     <div class="hebergement-features">
-                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-bed"></i>2 chambres (4 personnes)</p>
                         <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
-                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation multi-split</p>
                     </div>
+                    <button class="btn-reserver-chambre" onclick="reserverChambre(this)">📅 Réserver</button>
                 </div>
             </div>
         </div>
+
         <div class="hebergements-list">
-            <div class="hebergement-item">
-                <img src="./images/appart_img/hebergement1.png" alt="Chambre 1">
+            <!-- Carte 5 - Chambre Standard 2 -->
+            <div class="hebergement-item" data-chambre="Chambre Standard" data-prix="25000">
+                <img src="./images/appart_img/hebergement1.png" alt="Chambre Standard">
                 <div class="hebergement-info">
                     <h3>Chambre Standard</h3>
                     <p>à partir de <span>25000</span> FCFA/nuit</p>
@@ -152,42 +167,52 @@
                         <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
                         <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
                     </div>
+                    <button class="btn-reserver-chambre" onclick="reserverChambre(this)">📅 Réserver</button>
                 </div>
             </div>
-            <div class="hebergement-item">
-                <img src="./images/chambre1.png" alt="Chambre 1">
+
+            <!-- Carte 6 - Chambre Vue Mer -->
+            <div class="hebergement-item" data-chambre="Chambre Vue Mer" data-prix="40000">
+                <img src="./images/chambre1.png" alt="Chambre Vue Mer">
                 <div class="hebergement-info">
-                    <h3>Chambre Standard</h3>
-                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <h3>Chambre Vue Mer</h3>
+                    <p>à partir de <span>40000</span> FCFA/nuit</p>
                     <div class="hebergement-features">
-                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-bed"></i>1 lit queen size</p>
                         <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
-                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation silencieuse</p>
                     </div>
+                    <button class="btn-reserver-chambre" onclick="reserverChambre(this)">📅 Réserver</button>
                 </div>
             </div>
-            <div class="hebergement-item">
-                <img src="./images/chambre1.png" alt="Chambre 1">
+
+            <!-- Carte 7 - Suite Présidentielle -->
+            <div class="hebergement-item" data-chambre="Suite Présidentielle" data-prix="85000">
+                <img src="./images/chambre1.png" alt="Suite Présidentielle">
                 <div class="hebergement-info">
-                    <h3>Chambre Standard</h3>
-                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <h3>Suite Présidentielle</h3>
+                    <p>à partir de <span>85000</span> FCFA/nuit</p>
                     <div class="hebergement-features">
-                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
-                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
-                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                        <p><i class="fa-solid fa-bed"></i>1 lit king size + jacuzzi</p>
+                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi ultra rapide</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation haut de gamme</p>
                     </div>
+                    <button class="btn-reserver-chambre" onclick="reserverChambre(this)">📅 Réserver</button>
                 </div>
             </div>
-            <div class="hebergement-item">
-                <img src="./images/chambre1.png" alt="Chambre 1">
+
+            <!-- Carte 8 - Studio Économique -->
+            <div class="hebergement-item" data-chambre="Studio Économique" data-prix="18000">
+                <img src="./images/chambre1.png" alt="Studio Économique">
                 <div class="hebergement-info">
-                    <h3>Chambre Standard</h3>
-                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <h3>Studio Économique</h3>
+                    <p>à partir de <span>18000</span> FCFA/nuit</p>
                     <div class="hebergement-features">
-                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-bed"></i>1 lit simple</p>
                         <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
-                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Ventilateur + Clim</p>
                     </div>
+                    <button class="btn-reserver-chambre" onclick="reserverChambre(this)">📅 Réserver</button>
                 </div>
             </div>
         </div>
@@ -327,14 +352,76 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="map-container">
-            <iframe src="https://www.google.com/maps?q=Abidjan&output=embed" width="100%" height="450" style="border:0;"
-                allowfullscreen="" loading="lazy">
+            <iframe src="https://www.google.com/maps?q=Bingerville+Côte+d'Ivoire&output=embed" width="100%" height="450"
+                style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
         </div>
     </footer>
+
     <div class="copyright">
         <p>&copy; <span id="current-year"></span> Résidence Kanga - Tous droits réservés.</p>
     </div>
+
+    <!-- MODAL FORMULAIRE DE RÉSERVATION -->
+    <div id="modal-reservation" class="modal-reservation">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-calendar-check"></i> Réserver votre séjour</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <!-- Informations de la chambre (pré-remplies) -->
+                <div class="modal-chambre-info">
+                    <p><i class="fa-solid fa-hotel"></i> <strong id="modal-chambre-nom">Chambre</strong></p>
+                    <p><i class="fa-solid fa-money-bill"></i> <strong id="modal-chambre-prix">0</strong> FCFA/nuit</p>
+                </div>
+
+                <form id="form-reservation-modal">
+                    <div class="modal-form-group">
+                        <label><i class="fa-solid fa-user"></i> Nom complet *</label>
+                        <input type="text" id="modal-nom" placeholder="Votre nom et prénom" required>
+                    </div>
+
+                    <div class="modal-form-group">
+                        <label><i class="fa-solid fa-phone"></i> Numéro de téléphone *</label>
+                        <input type="tel" id="modal-telephone" placeholder="Ex: 01 60 74 97 86" required>
+                    </div>
+
+                    <div class="modal-row">
+                        <div class="modal-form-group">
+                            <label><i class="fa-solid fa-calendar-day"></i> Date d'arrivée *</label>
+                            <input type="date" id="modal-date-arrivee" required>
+                        </div>
+                        <div class="modal-form-group">
+                            <label><i class="fa-solid fa-calendar-week"></i> Date de départ *</label>
+                            <input type="date" id="modal-date-depart" required>
+                        </div>
+                    </div>
+
+                    <div class="modal-row">
+                        <div class="modal-form-group">
+                            <label><i class="fa-solid fa-user-group"></i> Adultes *</label>
+                            <input type="number" id="modal-adultes" min="1" value="1" required>
+                        </div>
+                        <div class="modal-form-group">
+                            <label><i class="fa-solid fa-child"></i> Enfants</label>
+                            <input type="number" id="modal-enfants" min="0" value="0">
+                        </div>
+                    </div>
+
+                    <div class="modal-form-group">
+                        <label><i class="fa-solid fa-message"></i> Message (optionnel)</label>
+                        <textarea id="modal-message" rows="2" placeholder="Informations complémentaires..."></textarea>
+                    </div>
+
+                    <button type="submit" class="modal-btn-valider">
+                        <i class="fa-brands fa-whatsapp"></i> Valider et envoyer sur WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="accueil.js"></script>
 </body>
 
