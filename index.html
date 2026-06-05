@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résidence Kanga</title>
+    <link rel="stylesheet" href="accueil.css">
+    <script src="https://kit.fontawesome.com/40a930d246.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Chambres</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#gallerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="btn" id="reserve-btn-nav">Réserver</button>
+        </nav>
+    </header>
+
+    <!--hero section-->
+    <section id="home" class="hero">
+        <h3>Bienvenue à</h3>
+        <h1>Residence <span>kanga</span></h1>
+        <p>Confort, élégance et sérénité</p>
+        <div class="btn-hero">
+            <a href="#services" id="decouvrir-btn">Découvrir nos chambres</a>
+            <a href="#reservation-section" id="reserver-hero-btn">Réserver</a>
+        </div>
+    </section>
+
+    <form class="reservation-hero" id="reservation-hero-form">
+        <div class="form-group">
+            <h4>Date de début</h4>
+            <label for="datedebut-hero"></label>
+            <input type="date" id="datedebut-hero" name="datedebut" required>
+        </div>
+        <div class="form-group">
+            <h4>Date de fin</h4>
+            <label for="datefin-hero"></label>
+            <input type="date" id="datefin-hero" name="datefin" required>
+        </div>
+        <div class="form-group">
+            <h4>Adultes</h4>
+            <label for="nombrepersonnes-hero"></label>
+            <input type="number" id="nombrepersonnes-hero" name="nombrepersonnes" min="1" value="1" required>
+        </div>
+        <div class="form-group">
+            <h4>Enfants</h4>
+            <label for="nombreenfants-hero"></label>
+            <input type="number" id="nombreenfants-hero" name="nombreenfants" min="0" value="0" required>
+        </div>
+        <button type="submit" id="submit-reservation-hero">Soumettre</button>
+    </form>
+
+    <div id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h4>À propos</h4>
+                <h2>Découvrez Residence Kanga.</h2>
+                <p>Residence kanga vous accueil dans un cadre <br> chalereux et securiser pour un sejour inoubliable.
+                </p>
+            </div>
+            <div class="about-features">
+                <p><i class="fa-solid fa-circle-check"></i>Sécurité 24/7</p>
+                <p><i class="fa-solid fa-circle-check"></i>Services de qualité</p>
+                <p><i class="fa-solid fa-circle-check"></i>Confort optimal</p>
+                <p><i class="fa-solid fa-circle-check"></i>Cadre paisible</p>
+            </div>
+            <button class="about-btn" id="about-btn">En savoir plus</button>
+        </div>
+        <div class="about-image">
+            <img src="./images/about-img.png" alt="Image à propos">
+        </div>
+    </div>
+
+    <div id="services" class="hebergements">
+        <h4>Nos chambres/apparts</h4>
+        <h2>Des chambres et appartement pour tous les gouts</h2>
+        <div class="hebergements-list">
+            <div class="hebergement-item">
+                <img src="./images/appart_img/hebergement1.png" alt="Chambre 1">
+                <div class="hebergement-info">
+                    <h3>Chambre Standard</h3>
+                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <div class="hebergement-features">
+                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hebergement-item">
+                <img src="./images/chambre1.png" alt="Chambre 1">
+                <div class="hebergement-info">
+                    <h3>Chambre Standard</h3>
+                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <div class="hebergement-features">
+                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hebergement-item">
+                <img src="./images/chambre1.png" alt="Chambre 1">
+                <div class="hebergement-info">
+                    <h3>Chambre Standard</h3>
+                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <div class="hebergement-features">
+                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hebergement-item">
+                <img src="./images/chambre1.png" alt="Chambre 1">
+                <div class="hebergement-info">
+                    <h3>Chambre Standard</h3>
+                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <div class="hebergement-features">
+                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hebergements-list">
+            <div class="hebergement-item">
+                <img src="./images/appart_img/hebergement1.png" alt="Chambre 1">
+                <div class="hebergement-info">
+                    <h3>Chambre Standard</h3>
+                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <div class="hebergement-features">
+                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hebergement-item">
+                <img src="./images/chambre1.png" alt="Chambre 1">
+                <div class="hebergement-info">
+                    <h3>Chambre Standard</h3>
+                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <div class="hebergement-features">
+                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hebergement-item">
+                <img src="./images/chambre1.png" alt="Chambre 1">
+                <div class="hebergement-info">
+                    <h3>Chambre Standard</h3>
+                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <div class="hebergement-features">
+                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hebergement-item">
+                <img src="./images/chambre1.png" alt="Chambre 1">
+                <div class="hebergement-info">
+                    <h3>Chambre Standard</h3>
+                    <p>à partir de <span>25000</span> FCFA/nuit</p>
+                    <div class="hebergement-features">
+                        <p><i class="fa-solid fa-bed"></i>1 lit double</p>
+                        <p><i class="fa-solid fa-wifi"></i>Wi-Fi gratuit</p>
+                        <p><i class="fa-solid fa-snowflake"></i> Climatisation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tarifs" class="service">
+        <h3>Nos services</h3>
+        <h2>Tous pour rendre votre séjour agréable</h2>
+        <div class="servicecontent">
+            <div class="service-card">
+                <i class="fa-solid fa-snowflake"></i>
+                <h4>Climatisation</h4>
+                <p>Toutes nos chambres <br> sont climatisées</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-wifi"></i>
+                <h4>Wifi gratuit</h4>
+                <p>Restez connecté pendant <br> votre séjour</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-anchor-lock"></i>
+                <h4>Sécurité 24/7</h4>
+                <p>Votre sécurité est notre priorité</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-car"></i>
+                <h4>Parking sécurisé</h4>
+                <p>Parking privé et sécurisé</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-house"></i>
+                <h4>Service de chambre</h4>
+                <p>Service rapide et efficace</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="reservation-section" class="reservation">
+        <h3>Réservez votre séjour</h3>
+        <p>Remplissez ce formulaire et envoyez par WhatsApp</p>
+        <div class="reserv-group">
+            <form action="post" class="form" id="reservation-form">
+                <div class="form-reservation">
+                    <div>
+                        <div class="champs">
+                            <label for="full-name">Nom complet</label>
+                            <input type="text" placeholder="Nom complet" id="full-name">
+                        </div>
+                        <div class="champs">
+                            <label for="phone-number">Numéro de téléphone</label>
+                            <input type="tel" placeholder="Numéro de téléphone" id="phone-number">
+                        </div>
+                        <div class="champs">
+                            <label for="datedebut-reserv">Date d'arrivée</label>
+                            <input type="date" id="datedebut-reserv" name="datedebut">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="champs">
+                            <label for="datefin-reserv">Date de départ</label>
+                            <input type="date" id="datefin-reserv" name="datefin">
+                        </div>
+                        <div class="champs">
+                            <label for="room-type">Type de chambre</label>
+                            <input type="text" placeholder="Type de chambre" id="room-type">
+                        </div>
+                        <div class="champs">
+                            <label for="guests-number">Nombre de personnes</label>
+                            <input type="text" placeholder="Nombre de personnes" id="guests-number">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" id="whatsapp-send"><i class="fa-brands fa-whatsapp"></i>Envoyer</a>
+            </form>
+            <div class="choix">
+                <img src="./images/logo.png" alt="Logo Résidence Kanga">
+                <h2>Pourquoi nous choisir</h2>
+                <div class="feature">
+                    <p><i class="fa-solid fa-circle-check"></i>Cadre paisible</p>
+                    <p><i class="fa-solid fa-circle-check"></i>Service client efficace</p>
+                    <p><i class="fa-solid fa-circle-check"></i>Plusieurs logements disponibles</p>
+                    <p><i class="fa-solid fa-circle-check"></i>+400 clients satisfaits</p>
+                    <p><i class="fa-solid fa-circle-check"></i>WiFi disponible</p>
+                    <p><i class="fa-solid fa-circle-check"></i>Chambres climatisées</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallerie" class="temoignage">
+        <h3>Témoignages</h3>
+        <h2>Ce que pensent nos clients</h2>
+        <div class="temoignage-content">
+            <div class="temoignage-cards">
+                <p><span>"</span>Ils m'ont fait attendre longtemps, mais le service est impeccable</p>
+                <h4>M. Kouakou François</h4>
+            </div>
+            <div class="temoignage-cards">
+                <p><span>"</span>Je ne sais même pas comment qualifier leur expertise</p>
+                <h4>M. Ange Patrick</h4>
+            </div>
+            <div class="temoignage-cards">
+                <p><span>"</span>Moi je n'ai rien à dire, mais je sais que je vais revenir</p>
+                <h4>Mme Guiguo Anne</h4>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact" class="foot">
+        <div class="logo-des">
+            <img src="./images/logo.png" alt="Logo Résidence Kanga">
+            <p>Quand le confort et le luxe sont à table, <br> la paix est obligée de s'asseoir</p>
+        </div>
+        <div class="foot-contact">
+            <div class="foot-head">
+                <h3>Contact</h3>
+                <h2>Nous sommes à votre écoute</h2>
+                <a href="tel:0100000000" id="phone-link"><i class="fa-solid fa-phone"></i>01 00 00 00 00</a>
+                <a href="mailto:residencekanga@gmail.com" id="email-link"><i
+                        class="fa-solid fa-envelope"></i>residencekanga@gmail.com</a>
+                <p><i class="fa-solid fa-location-dot"></i>Bingerville, nouvelle gare</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" id="facebook-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" id="instagram-link"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" id="whatsapp-link"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="#" id="tiktok-link"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <ul class="nav-links-foot">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Chambres</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#gallerie">Galerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps?q=Abidjan&output=embed" width="100%" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>&copy; <span id="current-year"></span> Résidence Kanga - Tous droits réservés.</p>
+    </div>
+    <script src="accueil.js"></script>
+</body>
+
+</html>
